@@ -22,4 +22,10 @@ fun main (args: Array<String>) {
     for (char in str) {
         print(char)
     }
+    // String templates
+    val i = 10
+    val value = "i = $i"
+    println("\n" + value)
+    println("$str.length is ${str.length}")
+
 }
