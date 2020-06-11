@@ -20,9 +20,19 @@ fun main(args: Array<String>) {
     var b: String? = "abc"
     b = null
     println(b)
+
+   var resultado = variable1?.equals(variable2) ?: (b === null)
+    println(resultado) // true
+    println(if (variable1 == variable2) true else false)
+
 }
 
 // String interpolation
 
 val num = 10
 val s = "i $num"
+
+// equals
+
+val variable1 = 10
+val variable2 = 10
