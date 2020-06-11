@@ -14,4 +14,12 @@ fun main (args: Array<String>) {
         |(Benjamin Franklin)
         """.trimMargin()
         println(text)
+
+    // ELements of String
+    val str = "Thiago"
+    println(str[1]) // prints h
+    //String elements can be iterated with a for loop
+    for (char in str) {
+        print(char)
+    }
 }
