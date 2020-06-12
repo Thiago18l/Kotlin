@@ -55,3 +55,14 @@ class Extensions {
     }
 }
 
+class Iterate {
+    companion object {
+        @JvmStatic
+        fun main (args: Array<String>) {
+            val asc = Array(5, { i -> (i * i).toString() })
+            for (item : String in asc) {
+                println(item)
+            }
+        }
+    }
+}
