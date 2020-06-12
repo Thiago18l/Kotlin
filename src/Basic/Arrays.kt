@@ -11,4 +11,11 @@ fun main(args: Array<String>) {
     // Using constructor
     var strings = Array<String>(size = 5, init = { index -> "Item $index"})
     print(strings.size)
+
+    strings.set(2, "ChangeItem")
+    print(strings.get(2))
+
+    //using subscription
+    strings[2] = "Another item"
+    print(strings.get(2))
 }
