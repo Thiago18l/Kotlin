@@ -43,3 +43,15 @@ fun Primitive (args: Array<String>) {
     charArrayOf('a', 'b', 'c') // JVM type: char[]
 }
 
+class Extensions {
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val doubles = doubleArrayOf(1.5, 3.0)
+            println(doubles.average())
+            val integers = intArrayOf(1, 4)
+            println(integers.average())
+        }
+    }
+}
+
