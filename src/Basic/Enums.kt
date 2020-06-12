@@ -21,3 +21,27 @@ enum class ColorFun {
 
     fun colorString() = "#%06X".format(0xFFFFFF and rgb)
 }
+
+// Simple Enum
+
+enum class Color2 {
+    RED, GREEN, BLUE
+}
+
+// Mutability
+
+enum class Planet(var population: Int = 0) {
+    EARTH(7 * 100000000),
+    MARS();
+
+    override fun toString(): String {
+        return "$name [Population = $population]"
+    }
+}
+
+fun main() {
+    val planet: Planet = Planet.EARTH
+    println(planet)
+    Planet.MARS.population = 40
+    println(Planet.MARS) // prints 40
+}
