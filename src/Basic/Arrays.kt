@@ -18,4 +18,28 @@ fun main(args: Array<String>) {
     //using subscription
     strings[2] = "Another item"
     print(strings.get(2))
+
+    // create array
+    val a = arrayOf(1, 2, 3) // create an Array<Int> of size 3 containing [1, 2, 3]
+    println("\n" + a.get(1))
+    for (item in a) {
+        println(item)
+    }
+
+    // Create array using a clousure
+    val closure = Array(3) { i -> i * 2 }
+    for (itens in closure) {
+        print("$itens ")
+    }
+
+    val uni = arrayOfNulls<Int>(3) // creates an Array<Int> of [null, null, null]
+
+
 }
+
+fun Primitive (args: Array<String>) {
+    booleanArrayOf(true, false) // JVM type: boolean[]
+    byteArrayOf(1, 2, 3) // JVM type: byte[]
+    charArrayOf('a', 'b', 'c') // JVM type: char[]
+}
+
