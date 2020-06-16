@@ -13,4 +13,7 @@ fun main() {
     for (item in result) {
         println(item)
     }
+
+    val response = listOf<Int>(1, 2, 3, 4).map { it + 2 }
+    println(response)
 }
